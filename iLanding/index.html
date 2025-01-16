@@ -1,0 +1,1883 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>iLanding</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+      rel="stylesheet"
+    />
+	<link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+  </head>
+  <body
+    data-bs-spy="scroll"
+    data-bs-target="#navbar"
+    data-bs-offset="70"
+    class="scrollspy-example"
+  >
+    <!-- Navbar -->
+    <nav
+      class="navbar container bg-white navbar-expand-lg fixed-top shadow rounded-navbar"
+    >
+      <div class="container">
+        <a class="navbar-brand" href="#">iLanding</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <!-- Centered Links -->
+          <ul class="navbar-nav mx-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="#home">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#about">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#features">Features</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#testimonials">Testimonials</a>
+            </li>
+			<li class="nav-item">
+              <a class="nav-link" href="#services">Services</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#pricing">Pricing</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                id="dropdownMenu"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                Dropdown
+              </a>
+              <ul
+                class="dropdown-menu animate-dropdown"
+                aria-labelledby="dropdownMenu"
+              >
+                <li>
+                  <a class="dropdown-item" href="#option1">Option 1</a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="#option2">Option 2</a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="#option3">Option 3</a>
+                </li>
+              </ul>
+            </li>
+          </ul>
+          <!-- Button on the Right -->
+          <button class="btn btn-primary rounded-button">Get Started</button>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="diagonal-bg pb-5">
+      <div class="d-flex align-items-center" style="min-height: 100vh">
+        <div
+          class="container d-flex justify-content-between align-items-center"
+        >
+          <!-- Left Content -->
+          <div class="content-left text-black">
+            <!-- Badge -->
+            <span class="custom-badge mb-4">
+              <i class="bi bi-gear"></i> Working for Your Success
+            </span>
+
+            <!-- Title with two colors -->
+            <h2 class="display-3 mt-3">
+              <span class="text-black">Maecenas Vitae</span><br />
+              <span class="text-black">Consectetur Led</span><br />
+              <span class="text-primary">Vestibulum Ante</span>
+            </h2>
+
+            <!-- Caption -->
+            <p class="mt-4">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Asperiores cupiditate atque, odio labore voluptas maiores fuga
+              rerum minima corrupti doloribus!
+            </p>
+
+            <!-- Buttons Section -->
+            <div class="d-flex mt-5">
+              <!-- Rounded button -->
+              <button class="btn btn-primary rounded-button me-2 px-4 py-2">
+                Get Started
+              </button>
+
+              <!-- Transparent button -->
+              <button
+                class="btn btn-outline-dark rounded-button"
+                style="border: none"
+              >
+                <i class="bi bi-play-fill"></i> Play Video
+              </button>
+            </div>
+          </div>
+
+          <!-- Right Image with Overlay -->
+          <div class="content-right position-relative">
+            <img src="./images/image1.jpg" alt="Image" class="img-fluid" />
+
+            <!-- Overlay Div -->
+            <div class="overlay floating-animation position-absolute bottom-0 end-0 m-3">
+              <!-- Avatar Icons -->
+
+              <!-- Horizontal Avatar Group (Inside a container) -->
+              <div class="avatars position-relative">
+                <a href="#" class="avatars__item">
+                  <img
+                    class="avatar rounded-circle"
+                    src="https://randomuser.me/api/portraits/women/65.jpg"
+                    alt=""
+                  />
+                </a>
+                <a href="#" class="avatars__item">
+                  <img
+                    class="avatar rounded-circle"
+                    src="https://randomuser.me/api/portraits/men/25.jpg"
+                    alt=""
+                  />
+                </a>
+                <a href="#" class="avatars__item">
+                  <img
+                    class="avatar rounded-circle"
+                    src="https://randomuser.me/api/portraits/women/25.jpg"
+                    alt=""
+                  />
+                </a>
+                <a href="#" class="avatars__item">
+                  <img
+                    class="avatar rounded-circle"
+                    src="https://randomuser.me/api/portraits/men/55.jpg"
+                    alt=""
+                  />
+                </a>
+                <a href="#" class="avatars__item">
+                  <div
+                    class="avatar flex items-center rounded-circle d-flex justify-content-center align-items-center bg-secondary text-white"
+                  >
+                    <p class="mb-0">+12</p>
+                  </div>
+                </a>
+              </div>
+
+              <!-- Random Stats -->
+				<div class="text-black text-sm ">
+					12,000+ Lorem ipsum dolor sit amet.
+				</div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Icon cards -->
+      <div
+        class="card mx-auto p-5 shadow"
+        style="width: 75%; border-radius: 15px"
+      >
+        <div class="row g-4">
+          <!-- Feature 1 -->
+          <div class="col-md-3 d-flex align-items-start">
+            <div class="icon-container me-3" style="background-color: #eef7ff">
+              <i class="bi bi-gear"></i>
+            </div>
+            <div>
+              <h5 class="mb-1">Feature 1</h5>
+              <p class="mb-0 text-muted">Short description for feature.</p>
+            </div>
+          </div>
+
+          <!-- Feature 2 -->
+          <div class="col-md-3 d-flex align-items-start">
+            <div class="icon-container me-3" style="background-color: #eef7ff">
+              <i class="bi bi-lightbulb"></i>
+            </div>
+            <div>
+              <h5 class="mb-1">Feature 2</h5>
+              <p class="mb-0 text-muted">Short description for feature.</p>
+            </div>
+          </div>
+
+          <!-- Feature 3 -->
+          <div class="col-md-3 d-flex align-items-start">
+            <div class="icon-container me-3" style="background-color: #eef7ff">
+              <i class="bi bi-briefcase"></i>
+            </div>
+            <div>
+              <h5 class="mb-1">Feature 3</h5>
+              <p class="mb-0 text-muted">Short description for feature.</p>
+            </div>
+          </div>
+
+          <!-- Feature 4 -->
+          <div class="col-md-3 d-flex align-items-start">
+            <div class="icon-container me-3" style="background-color: #eef7ff">
+              <i class="bi bi-people"></i>
+            </div>
+            <div>
+              <h5 class="mb-1">Feature 4</h5>
+              <p class="mb-0 text-muted">Short description for feature.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-5 bg-white" style="min-height: 60vh">
+      <style>
+        /* Add some custom spacing for the icons and alignment */
+        #about .content-left h6 {
+          letter-spacing: 1px;
+        }
+
+        #about .content-left p {
+          font-size: 1rem;
+          color: #6c757d;
+        }
+
+        #about .content-left .bi-check-circle-fill {
+          font-size: 1.25rem;
+        }
+
+        #about .content-left img {
+          max-width: 100%;
+          border-radius: 10px;
+        }
+
+        #about .content-left .call-to-action p {
+          font-size: 0.9rem;
+          margin-bottom: 0;
+        }
+      </style>
+
+      <div class="container d-flex flex-wrap align-items-center">
+        <!-- Left Content -->
+        <div class="content-left col-lg-6">
+          <!-- Small Title -->
+          <h6 class="text-uppercase text-primary mb-3">More about us</h6>
+
+          <!-- Big Title -->
+          <h2 class="mb-4 fw-bold">Some lorem ipsum placeholder text</h2>
+
+          <!-- Description -->
+          <p class="mb-4 text-black">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur,
+            ducimus dolorum officia veniam sunt provident? Molestias
+            voluptatibus non aspernatur odio.Lorem ipsum dolor sit amet
+            consectetur adipisicing elit. Aspernatur, ducimus dolorum officia
+            veniam sunt provident? Molestias voluptatibus non aspernatur odio.
+          </p>
+
+          <!-- Grid of Tick Icons -->
+          <div class="row mb-4">
+            <div class="col-6 d-flex align-items-start mb-2">
+              <i class="bi bi-check-circle-fill text-primary me-2"></i>
+              <p class="text-black">First Feature</p>
+            </div>
+            <div class="col-6 d-flex align-items-start mb-2">
+              <i class="bi bi-check-circle-fill text-primary me-2"></i>
+              <p class="text-black">Second Feature</p>
+            </div>
+            <div class="col-6 d-flex align-items-start mb-2">
+              <i class="bi bi-check-circle-fill text-primary me-2"></i>
+              <p class="text-black">Third Feature</p>
+            </div>
+            <div class="col-6 d-flex align-items-start mb-2">
+              <i class="bi bi-check-circle-fill text-primary me-2"></i>
+              <p class="text-black">Fourth Feature</p>
+            </div>
+            <div class="col-6 d-flex align-items-start mb-2">
+              <i class="bi bi-check-circle-fill text-primary me-2"></i>
+              <p class="text-black">Fifth Feature</p>
+            </div>
+            <div class="col-6 d-flex align-items-start mb-2">
+              <i class="bi bi-check-circle-fill text-primary me-2"></i>
+              <p class="text-black">Sixth Feature</p>
+            </div>
+          </div>
+
+          <!-- Avatar, Name, and Call to Action -->
+          <div class="d-flex align-items-center">
+            <!-- Avatar -->
+            <img
+              src="https://randomuser.me/api/portraits/men/32.jpg"
+              alt="Avatar"
+              class="rounded-circle me-3"
+              style="width: 50px; height: 50px; object-fit: cover"
+            />
+            <div>
+              <h6 class="mb-0 fw-bold">John Doe</h6>
+              <p class="text-muted mb-0">Marketing Manager</p>
+            </div>
+            <div class="m-auto">
+              <!-- Call to Action -->
+              <p class="text-primary mb-0 fw-bold">
+                <i class="bi bi-telephone-fill me-2"></i>Call us anytime
+              </p>
+              <p class="mb-0">+1 (123) 456-7890</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Right Image -->
+        <div class="content-right col-lg-6 text-center position-relative">
+    <img
+        src="./images/pips.jpg"
+        alt="About Image"
+        class="img-fluid rounded shadow"
+    />
+    <div class="experience-badge">
+        <h3>15+ <span>Years</span></h3>
+        <p>Of experience in business service</p>
+    </div>
+</div>
+        </div>
+		
+      </div>
+    </section>
+
+    <!-- Features Section -->
+    <section class="container mt-5" id="features">
+      <div class="section-title mb-5">
+        <h2 class="mb-3">Features</h2>
+        <div class="blue-line mb-3"></div>
+        <p>
+          Discover some amazing features we offer to enhance your experience.
+        </p>
+      </div>
+      <div class="d-flex justify-content-center my-4">
+        <div
+          class="nav nav-tabs nav-pills custom-tabs"
+          role="tablist"
+          style="
+            background-color: #cbe4ff;
+            border-radius: 60px;
+            border-bottom: none;
+            padding: 5px;
+          "
+        >
+          <a
+            role="tab"
+            class="nav-link custom-tab active"
+            id="tab1-tab"
+            data-bs-toggle="tab"
+            href="#tab1"
+            aria-selected="true"
+            >Modist</a
+          >
+          <a
+            role="tab"
+            class="nav-link custom-tab"
+            id="tab2-tab"
+            data-bs-toggle="tab"
+            href="#tab2"
+            aria-selected="false"
+            >Praesenti</a
+          >
+          <a
+            role="tab"
+            class="nav-link custom-tab"
+            id="tab3-tab"
+            data-bs-toggle="tab"
+            href="#tab3"
+            aria-selected="false"
+            >Explica</a
+          >
+        </div>
+      </div>
+
+      <div class="tab-content text-center">
+        <div
+          class="tab-pane fade"
+          id="tab1"
+          role="tabpanel"
+          aria-labelledby="tab1-tab"
+        >
+          Content for tab 1
+        </div>
+        <div
+          class="tab-pane fade show active"
+          id="tab2"
+          role="tabpanel"
+          aria-labelledby="tab2-tab"
+        >
+          <div
+            class="d-flex justify-content-between align-items-left my-5 flex-wrap"
+          >
+            <!-- Left Section -->
+            <div class="content-section">
+              <h1 class="mb-4" style="text-align: left">Feature Title</h1>
+              <div class="blue-line mb-5"></div>
+              <p class="caption" style="text-align: left; margin-bottom: 2rem">
+                <em
+                  >Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                  Illum consectetur cum quod veniam aspernatur accusantium
+                  fugiat dolor soluta voluptas ex.</em
+                >
+              </p>
+              <ul class="feature-list">
+                <li>
+                  <i class="bi bi-check2-all text-primary"></i> Lorem ipsum
+                  dolor sit amet consectetur, adipisicing elit. Expedita,
+                  consequatur!
+                </li>
+                <li>
+                  <i class="bi bi-check2-all text-primary"></i> Lorem ipsum
+                  dolor sit amet consectetur adipisicing elit. Maiores, mollitia
+                  totam!
+                </li>
+                <li>
+                  <i class="bi bi-check2-all text-primary"></i> Lorem ipsum
+                  dolor sit amet consectetur adipisicing elit. Voluptas esse
+                  iure accusamus dicta quas minus magni! feature item
+                </li>
+              </ul>
+            </div>
+
+            <!-- Right Section -->
+            <div class="image-section">
+              <img
+                src="/images/image7.jpg"
+                alt="Feature Image"
+                class="img-fluid rounded"
+              />
+            </div>
+          </div>
+        </div>
+        <div
+          class="tab-pane fade"
+          id="tab3"
+          role="tabpanel"
+          aria-labelledby="tab3-tab"
+        >
+          Content for Tab 3
+        </div>
+      </div>
+      <div class="container my-5">
+        <!-- Grid of 4 Cards -->
+        <div class="row g-4">
+          <!-- Card 1 -->
+          <div class="col-lg-3 col-md-6">
+            <div
+              class="card shadow text-left p-4"
+              style="background-color: #deedfd; border-radius: 15px"
+            >
+              <i
+                class="bi bi-award"
+                style="font-size: 2rem; color: black"
+              ></i>
+              <h4 class="mt-3 text-black">Innovative Ideas</h4>
+              <p class="text-black">
+                Explore creative and innovative solutions.
+              </p>
+            </div>
+          </div>
+
+          <!-- Card 2 -->
+          <div class="col-lg-3 col-md-6">
+            <div
+              class="card text-left shadow p-4"
+              style="background-color: #d5f1e4; border-radius: 15px"
+            >
+              <i
+                class="bi bi-patch-check"
+                style="font-size: 2rem; color: black"
+              ></i>
+              <h4 class="mt-3 text-black">Efficient Tools</h4>
+              <p class="text-black">
+                Streamline your workflow with top-notch tools.
+              </p>
+            </div>
+          </div>
+
+          <!-- Card 3 -->
+          <div class="col-lg-3 col-md-6">
+            <div
+              class="card shadow text-left p-4"
+              style="background-color: #fff3e2; border-radius: 15px"
+            >
+              <i
+                class="bi bi-sunrise"
+                style="font-size: 2rem; color: black"
+              ></i>
+              <h4 class="mt-3 text-black">Collaborative Teams</h4>
+              <p class="text-black">
+                Work together with a great team. Lorem ipsum dolor sit amet.
+              </p>
+            </div>
+          </div>
+
+          <!-- Card 4 -->
+          <div class="col-lg-3 col-md-6">
+            <div
+              class="card shadow text-left p-4"
+              style="background-color: #fdeded; border-radius: 15px"
+            >
+              <i
+                class="bi bi-shield-check"
+                style="font-size: 2rem; color: black"
+              ></i>
+              <h4 class="mt-3 text-black">Fast Performance</h4>
+              <p class="text-black">Achieve excellent speed and results.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+	  
+	  <section id="features-2" class="features-2 section" style="margin: 150px 0;">
+
+      <div class="container aos-init aos-animate" data-aos="fade-up" data-aos-delay="100">
+
+        <div class="row align-items-center">
+
+          <div class="col-lg-4">
+
+            <div class="feature-item text-end mb-5 aos-init aos-animate" data-aos="fade-right" data-aos-delay="200">
+              <div class="d-flex align-items-center justify-content-end gap-4">
+                <div class="feature-content">
+                  <h3>Use On Any Device</h3>
+                  <p>Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; In ac dui quis mi consectetuer lacinia.</p>
+                </div>
+                <div class="icon-container me-6" style="background-color: #eef7ff; width: 110px; height: 60px; display: flex; justify-content: center; align-items: center; border-radius: 50%; padding: 10px;">
+					<i class="bi bi-display" style="font-size: 24px;"></i>
+				</div>
+              </div>
+            </div><!-- End .feature-item -->
+
+            <div class="feature-item text-end mb-5 aos-init aos-animate" data-aos="fade-right" data-aos-delay="300">
+              <div class="d-flex align-items-center justify-content-end gap-4">
+                <div class="feature-content">
+                  <h3>Feather Icons</h3>
+                  <p>Phasellus ullamcorper ipsum rutrum nunc nunc nonummy metus vestibulum volutpat sapien arcu sed augue aliquam erat volutpat.</p>
+                </div>
+                <div class="icon-container me-6" style="background-color: #eef7ff; width: 110px; height: 60px; display: flex; justify-content: center; align-items: center; border-radius: 50%; padding: 10px;">
+					<i class="bi bi-feather" style="font-size: 24px;"></i>
+				</div>
+              </div>
+            </div><!-- End .feature-item -->
+
+            <div class="feature-item text-end aos-init aos-animate" data-aos="fade-right" data-aos-delay="400">
+              <div class="d-flex align-items-center justify-content-end gap-4">
+                <div class="feature-content">
+                  <h3>Retina Ready</h3>
+                  <p>Aenean tellus metus bibendum sed posuere ac mattis non nunc vestibulum fringilla purus sit amet fermentum aenean commodo.</p>
+                </div>
+                <div class="icon-container me-6" style="background-color: #eef7ff; width: 110px; height: 60px; display: flex; justify-content: center; align-items: center; border-radius: 50%; padding: 10px;">
+					<i class="bi bi-eye" style="font-size: 24px;"></i>
+				</div>
+              </div>
+            </div><!-- End .feature-item -->
+
+          </div>
+
+          <div class="col-lg-4 aos-init aos-animate" data-aos="zoom-in" data-aos-delay="200">
+            <div class="phone-mockup text-center">
+              <img src="./images/image2.jpg" alt="Phone Mockup" class="img-fluid" >
+            </div>
+          </div><!-- End Phone Mockup -->
+
+          <div class="col-lg-4">
+
+            <div class="feature-item mb-5 aos-init aos-animate" data-aos="fade-left" data-aos-delay="200">
+              <div class="d-flex align-items-center gap-4">
+                <div class="icon-container me-6" style="background-color: #eef7ff; width: 110px; height: 60px; display: flex; justify-content: center; align-items: center; border-radius: 50%; padding: 10px;">
+					<i class="bi bi-code-square" style="font-size: 24px;"></i>
+				</div>
+                <div class="feature-content">
+                  <h3>W3c Valid Code</h3>
+                  <p>Donec vitae sapien ut libero venenatis faucibus nullam quis ante etiam sit amet orci eget eros faucibus tincidunt.</p>
+                </div>
+              </div>
+            </div><!-- End .feature-item -->
+
+            <div class="feature-item mb-5 aos-init aos-animate" data-aos="fade-left" data-aos-delay="300">
+              <div class="d-flex align-items-center gap-4">
+                <div class="icon-container me-6" style="background-color: #eef7ff; width: 110px; height: 60px; display: flex; justify-content: center; align-items: center; border-radius: 50%; padding: 10px;">
+					<i class="bi bi-phone" style="font-size: 24px;"></i>
+				</div>
+                <div class="feature-content">
+                  <h3>Fully Responsive</h3>
+                  <p>Maecenas tempus tellus eget condimentum rhoncus sem quam semper libero sit amet adipiscing sem neque sed ipsum.</p>
+                </div>
+              </div>
+            </div><!-- End .feature-item -->
+
+            <div class="feature-item aos-init aos-animate" data-aos="fade-left" data-aos-delay="400">
+              <div class="d-flex align-items-center gap-4">
+                <div class="icon-container me-6" style="background-color: #eef7ff; width: 110px; height: 60px; display: flex; justify-content: center; align-items: center; border-radius: 50%; padding: 10px;">
+					<i class="bi bi-browser-chrome" style="font-size: 24px;"></i>
+				</div>
+                <div class="feature-content">
+                  <h3>Browser Compatibility</h3>
+                  <p>Nullam dictum felis eu pede mollis pretium integer tincidunt cras dapibus vivamus elementum semper nisi aenean vulputate.</p>
+                </div>
+              </div>
+            </div><!-- End .feature-item -->
+
+          </div>
+        </div>
+
+      </div>
+
+    </section>
+	  
+	  
+	  
+      <div
+        class="cta-section mb-4 rounded mx-2 mt-5 text-white text-center py-5 position-relative overflow-hidden"
+      >
+        <!-- SVG Art Decoration -->
+        <svg
+          class="position-absolute top-0 start-0 w-50 h-auto opacity-25"
+          xmlns="http://www.w3.org/2000/svg"
+          viewBox="0 0 1440 320"
+        >
+          <path
+            fill="#ffffff"
+            fill-opacity="1"
+            d="M0,192L80,186.7C160,181,320,171,480,186.7C640,203,800,245,960,234.7C1120,224,1280,160,1360,128L1440,96L1440,320L1360,320C1280,320,1120,320,960,320C800,320,640,320,480,320C320,320,160,320,80,320L0,320Z"
+          ></path>
+        </svg>
+
+        <!-- Content -->
+        <div class="container position-relative" style="padding: 100px">
+          <h1 class="display-1">
+            Maecenas tempus tellus eget<br />
+            condimentum!
+          </h1>
+          <p class="lead mb-4">
+            Don't miss out on our amazing features and benefits. Be part of the
+            journey now!
+          </p>
+          <a href="#" class="btn btn-light btn-lg rounded-pill"
+            >Call to Action</a
+          >
+        </div>
+      </div>
+    </section>
+
+    <!-- Logos Section -->
+	
+<section id="clients" class="clients section">
+
+    <div class="container aos-init aos-animate" data-aos="fade-up" data-aos-delay="100">
+        <div class="swiper init-swiper">
+            <div class="swiper-wrapper mb-5">
+                <div class="swiper-slide icon-hover"><img src="./images/client-1.png" class="img-fluid" alt="Client Logo 1"></div>
+                <div class="swiper-slide"><img src="./images/client-2.png" class="img-fluid" alt="Client Logo 2"></div>
+                <div class="swiper-slide"><img src="./images/client-3.png" class="img-fluid" alt="Client Logo 3"></div>
+                <div class="swiper-slide"><img src="./images/client-4.png" class="img-fluid" alt="Client Logo 4"></div>
+                <div class="swiper-slide"><img src="./images/client-5.png" class="img-fluid" alt="Client Logo 5"></div>
+                <div class="swiper-slide"><img src="./images/client-6.png" class="img-fluid" alt="Client Logo 6"></div>
+                <div class="swiper-slide"><img src="./images/client-7.png" class="img-fluid" alt="Client Logo 7"></div>
+                <div class="swiper-slide"><img src="./images/client-8.png" class="img-fluid" alt="Client Logo 8"></div>
+            </div>
+            <div class="swiper-pagination mt-5" style="margin-top: 20px !important;"></div>
+        </div>
+    </div>
+	<script>
+    const swiper = new Swiper('.swiper', {
+        loop: true, // Enable looping
+        speed: 600, // Transition speed
+        autoplay: {
+            delay: 2000, // Delay between transitions
+        },
+        slidesPerView: 'auto', // Auto size based on container
+        spaceBetween: 20, // Space between slides
+        pagination: {
+            el: '.swiper-pagination',
+            type: 'bullets',
+            clickable: true, // Enable clicking on bullets
+        },
+        breakpoints: {
+            320: {
+                slidesPerView: 2,
+                spaceBetween: 40,
+            },
+            480: {
+                slidesPerView: 3,
+                spaceBetween: 60,
+            },
+            640: {
+                slidesPerView: 4,
+                spaceBetween: 80,
+            },
+            992: {
+                slidesPerView: 6,
+                spaceBetween: 120,
+            },
+        },
+    });
+</script>
+</section>
+
+
+    <!-- Testimonials Section -->
+    <section class="testimonials py-5" id="testimonials">
+      <div class="container">
+        <!-- Title and Caption -->
+        <div class="section-title text-center mb-5">
+          <h2 class="fw-bold mb-3">Testimonials</h2>
+          <div class="blue-line mx-auto mb-3"></div>
+          <p class="text-muted fst-italic">
+            Hear from some of our happy clients who trust us.
+          </p>
+        </div>
+
+        <!-- Testimonials Grid -->
+        <div class="row g-4">
+          <!-- Testimonial Card 1 -->
+          <div class="col-md-6">
+            <div class="testimonial-card p-4 shadow-sm rounded">
+              <div class="d-flex align-items-center mb-3">
+                <img
+                  src="./images/avatar1.jpg"
+                  alt="Client 1"
+                  class="rounded-circle me-3"
+                />
+                <div>
+                  <h5 class="mb-1">John Doe</h5>
+                  <p class="text-muted mb-0">Software Engineer</p>
+                  <!-- Star Rating -->
+                  <div class="star-rating">
+                    <i class="bi bi-star-fill text-warning"></i>
+                    <i class="bi bi-star-fill text-warning"></i>
+                    <i class="bi bi-star-fill text-warning"></i>
+                    <i class="bi bi-star-fill text-warning"></i>
+                    <i class="bi bi-star-half text-warning"></i>
+                  </div>
+                </div>
+              </div>
+              <blockquote class="blockquote mb-0 text-muted">
+                "This service completely changed my workflow. The team was
+                responsive, and the product exceeded my expectations. "
+              </blockquote>
+            </div>
+          </div>
+
+          <!-- Testimonial Card 2 -->
+          <div class="col-md-6">
+            <div class="testimonial-card p-4 shadow-sm rounded">
+              <div class="d-flex align-items-center mb-3">
+                <img
+                  src="./images/avatar3.jpg"
+                  alt="Client 2"
+                  class="rounded-circle me-3"
+                />
+                <div>
+                  <h5 class="mb-1">Jane Smith</h5>
+                  <p class="text-muted mb-0">Marketing Specialist</p>
+                  <!-- Star Rating -->
+                  <div class="star-rating">
+                    <i class="bi bi-star-fill text-warning"></i>
+                    <i class="bi bi-star-fill text-warning"></i>
+                    <i class="bi bi-star-fill text-warning"></i>
+                    <i class="bi bi-star-half text-warning"></i>
+                    <i class="bi bi-star text-warning"></i>
+                  </div>
+                </div>
+              </div>
+              <blockquote class="blockquote mb-0 text-muted">
+                "I couldn't be happier with the results. The attention to detail
+                and customer support was outstanding. Great experience!"
+              </blockquote>
+            </div>
+          </div>
+
+          <!-- Testimonial Card 3 -->
+          <div class="col-md-6">
+            <div class="testimonial-card p-4 shadow-sm rounded">
+              <div class="d-flex align-items-center mb-3">
+                <img
+                  src="./images/avatar4.jpg"
+                  alt="Client 3"
+                  class="rounded-circle me-3"
+                />
+                <div>
+                  <h5 class="mb-1">Bruce Johnson</h5>
+                  <p class="text-muted mb-0">Project Manager</p>
+                  <!-- Star Rating -->
+                  <div class="star-rating">
+                    <i class="bi bi-star-fill text-warning"></i>
+                    <i class="bi bi-star-fill text-warning"></i>
+                    <i class="bi bi-star-fill text-warning"></i>
+                    <i class="bi bi-star-fill text-warning"></i>
+                    <i class="bi bi-star-half text-warning"></i>
+                  </div>
+                </div>
+              </div>
+              <blockquote class="blockquote mb-0 text-muted">
+                "An absolute game-changer for my business. The team was
+                incredibly professional and delivered on every promise."
+              </blockquote>
+            </div>
+          </div>
+
+          <!-- Testimonial Card 4 -->
+          <div class="col-md-6">
+            <div class="testimonial-card p-4 shadow-sm rounded">
+              <div class="d-flex align-items-center mb-3">
+                <img
+                  src="./images/avatar2.jpg"
+                  alt="Client 4"
+                  class="rounded-circle me-3"
+                />
+                <div>
+                  <h5 class="mb-1">Robert Brown</h5>
+                  <p class="text-muted mb-0">Entrepreneur</p>
+                  <!-- Star Rating -->
+                  <div class="star-rating">
+                    <i class="bi bi-star-fill text-warning"></i>
+                    <i class="bi bi-star-fill text-warning"></i>
+                    <i class="bi bi-star-fill text-warning"></i>
+                    <i class="bi bi-star-fill text-warning"></i>
+                    <i class="bi bi-star-fill text-warning"></i>
+                  </div>
+                </div>
+              </div>
+              <blockquote class="blockquote mb-0 text-muted">
+                "Exceptional service and support. I've seen tangible results
+                after using their solutions. Highly recommended to everyone!"
+              </blockquote>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Counter Section -->
+    <section class="counter-section py-5">
+      <div class="container">
+        <div class="row text-center">
+          <!-- Counter 1 -->
+          <div class="col-md-3">
+            <div class="counter-box">
+              <div class="number" data-target="232">0</div>
+              <div class="blue-line mx-auto"></div>
+              <h5 class="mt-3">Clients</h5>
+            </div>
+          </div>
+          <!-- Counter 2 -->
+          <div class="col-md-3">
+            <div class="counter-box">
+              <div class="number" data-target="521">0</div>
+              <div class="blue-line mx-auto"></div>
+              <h5 class="mt-3">Projects</h5>
+            </div>
+          </div>
+          <!-- Counter 3 -->
+          <div class="col-md-3">
+            <div class="counter-box">
+              <div class="number" data-target="1452">0</div>
+              <div class="blue-line mx-auto"></div>
+              <h5 class="mt-3">Hours of Support</h5>
+            </div>
+          </div>
+          <!-- Counter 4 -->
+          <div class="col-md-3">
+            <div class="counter-box">
+              <div class="number" data-target="32">0</div>
+              <div class="blue-line mx-auto"></div>
+              <h5 class="mt-3">Workers</h5>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <script>
+        document.addEventListener("DOMContentLoaded", function () {
+          const counters = document.querySelectorAll(".number");
+          counters.forEach((counter) => {
+            const updateCount = () => {
+              const target = +counter.getAttribute("data-target");
+              const count = +counter.innerText;
+              const increment = target / 100; // Adjust this for smoother/faster animation
+
+              if (count < target) {
+                counter.innerText = Math.ceil(count + increment);
+                setTimeout(updateCount, 20); // Adjust the timing for faster/slower updates
+              } else {
+                counter.innerText = target;
+              }
+            };
+            updateCount();
+          });
+        });
+      </script>
+    </section>
+
+    <!-- Services -->
+	<section id="services" class="services section" style="background-color:#f3f9ff">
+
+      <!-- Section Title -->
+      <div class="container section-title py-5 my-5 aos-init aos-animate" data-aos="fade-up" style="margin: 80px;" >
+        <h2>Services</h2>
+		<div class="blue-line mx-auto my-3"></div>
+        <p>Necessitatibus eius consequatur ex aliquid fuga eum quidem sint consectetur velit</p>
+      </div><!-- End Section Title -->
+
+      <div class="container aos-init aos-animate" data-aos="fade-up" data-aos-delay="100">
+
+        <div class="row g-4">
+
+          <div class="col-lg-6 aos-init aos-animate" data-aos="fade-up" data-aos-delay="100">
+            <div class="service-card d-flex">
+              <div class="icon-container me-6 rounded " style="margin-right: 30px; background-color: #eef7ff; width: 110px; height: 60px; display: flex; justify-content: center; align-items: center; padding: 5px;">
+					<i class="bi bi-code-square" style="font-size: 24px;"></i>
+				</div>
+
+              <div>
+                <h3>Nesciunt Mete</h3>
+                <p>Provident nihil minus qui consequatur non omnis maiores. Eos accusantium minus dolores iure perferendis tempore et consequatur.</p>
+                <a href="service-details.html" class="read-more" style="text-decoration: none">Read More <i class="bi bi-arrow-right"></i></a>
+              </div>
+            </div>
+          </div><!-- End Service Card -->
+
+          <div class="col-lg-6 aos-init aos-animate" data-aos="fade-up" data-aos-delay="200">
+            <div class="service-card d-flex">
+              <div class="icon-container me-6 rounded " style="margin-right: 30px; background-color: #eef7ff; width: 110px; height: 60px; display: flex; justify-content: center; align-items: center; padding: 5px;">
+                <i class="bi bi-diagram-3"></i>
+              </div>
+              <div>
+                <h3>Eosle Commodi</h3>
+                <p>Ut autem aut autem non a. Sint sint sit facilis nam iusto sint. Libero corrupti neque eum hic non ut nesciunt dolorem.</p>
+                <a href="service-details.html" class="read-more" style="text-decoration: none">Read More <i class="bi bi-arrow-right"></i></a>
+              </div>
+            </div>
+          </div><!-- End Service Card -->
+
+          <div class="col-lg-6 aos-init aos-animate" data-aos="fade-up" data-aos-delay="300">
+            <div class="service-card d-flex">
+              <div class="icon-container me-6 rounded " style="margin-right: 30px; background-color: #eef7ff; width: 110px; height: 60px; display: flex; justify-content: center; align-items: center; padding: 5px;">
+                <i class="bi bi-easel"></i>
+              </div>
+              <div>
+                <h3>Ledo Markt</h3>
+                <p>Ut excepturi voluptatem nisi sed. Quidem fuga consequatur. Minus ea aut. Vel qui id voluptas adipisci eos earum corrupti.</p>
+                <a href="service-details.html" class="read-more" style="text-decoration: none">Read More <i class="bi bi-arrow-right"></i></a>
+              </div>
+            </div>
+          </div><!-- End Service Card -->
+
+          <div class="col-lg-6 aos-init aos-animate" data-aos="fade-up" data-aos-delay="400">
+            <div class="service-card d-flex">
+              <div class="icon-container me-6 rounded " style="margin-right: 30px; background-color: #eef7ff; width: 110px; height: 60px; display: flex; justify-content: center; align-items: center; padding: 5px;">
+                <i class="bi bi-clipboard-data"></i>
+              </div>
+              <div>
+                <h3>Asperiores Commodit</h3>
+                <p>Non et temporibus minus omnis sed dolor esse consequatur. Cupiditate sed error ea fuga sit provident adipisci neque.</p>
+                <a href="service-details.html" class="read-more" style="text-decoration: none">Read More <i class="bi bi-arrow-right"></i></a>
+              </div>
+            </div>
+          </div><!-- End Service Card -->
+
+        </div>
+
+      </div>
+
+    </section>
+
+    <!-- Pricing Section -->
+    <section id="pricing" class="pricing-section py-5 mb-5" style="background-color:#f3f9ff">
+      <div class="container">
+        <div class="text-center mb-5">
+          <h2 class="section-title">Our Pricing</h2>
+          <div class="blue-line mx-auto"></div>
+          <p class="text-muted">Choose the best plan that suits your needs.</p>
+        </div>
+        <div class="row justify-content-center">
+          <!-- Basic Plan -->
+          <div class="col-md-4">
+            <div class="pricing-card p-4 shadow-sm bg-white rounded">
+              <h4 class="plan-title">Basic</h4>
+              <div class="price-container mt-3">
+                <span class="dollar-sign">$</span>
+                <span class="price">10</span>
+                <span class="per-month">/month</span>
+              </div>
+              <p class="text-muted mt-2">Perfect for personal use.</p>
+              <h5 class="features-title mt-4">Features Included</h5>
+              <ul class="list-unstyled mt-3">
+                <li>
+                  <i class="bi bi-check-circle text-success me-2"></i>5 Projects
+                </li>
+                <li>
+                  <i class="bi bi-check-circle text-success me-2"></i>10GB
+                  Storage
+                </li>
+                <li>
+                  <i class="bi bi-check-circle text-success me-2"></i>Email
+                  Support
+                </li>
+              </ul>
+              <button
+                class="btn btn-outline-primary mt-4 px-4"
+                style="border-radius: 50px"
+              >
+                Buy Now
+              </button>
+            </div>
+          </div>
+          <!-- Standard Plan -->
+          <div class="col-md-4">
+            <div
+              class="pricing-card p-4 shadow-sm rounded bg-primary text-white position-relative"
+            >
+              <div class="badge-popular">Most Popular</div>
+              <h4 class="plan-title mt-3">Standard</h4>
+              <div class="price-container mt-3">
+                <span class="dollar-sign">$</span>
+                <span class="price">30</span>
+                <span class="per-month">/month</span>
+              </div>
+              <p class="text-light mt-2">Ideal for small teams.</p>
+              <h5 class="features-title mt-4">Features Included</h5>
+              <ul class="list-unstyled mt-3">
+                <li><i class="bi bi-check-circle-fill me-2"></i>20 Projects</li>
+                <li>
+                  <i class="bi bi-check-circle-fill me-2"></i>50GB Storage
+                </li>
+                <li>
+                  <i class="bi bi-check-circle-fill me-2"></i>Priority Support
+                </li>
+              </ul>
+              <button
+                class="btn btn-light mt-4 px-4 py-2"
+                style="border-radius: 50px; font-size: 18px"
+              >
+                Buy Now
+                <i class="bi bi-arrow-right ms-2" style="font-size: 20px"></i>
+              </button>
+            </div>
+          </div>
+          <!-- Premium Plan -->
+          <div class="col-md-4">
+            <div class="pricing-card p-4 shadow-sm bg-white rounded">
+              <h4 class="plan-title">Premium</h4>
+              <div class="price-container mt-3">
+                <span class="dollar-sign">$</span>
+                <span class="price">50</span>
+                <span class="per-month">/month</span>
+              </div>
+              <p class="text-muted mt-2">Best for growing businesses.</p>
+              <h5 class="features-title mt-4">Features Included</h5>
+              <ul class="list-unstyled mt-3">
+                <li>
+                  <i class="bi bi-check-circle text-success me-2"></i>Unlimited
+                  Projects
+                </li>
+                <li>
+                  <i class="bi bi-check-circle text-success me-2"></i>200GB
+                  Storage
+                </li>
+                <li>
+                  <i class="bi bi-check-circle text-success me-2"></i>24/7
+                  Support
+                </li>
+              </ul>
+              <button class="btn btn-outline-primary mt-4 px-4"
+                style="border-radius: 50px">Buy Now</button>/
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="container my-5 py-5">
+      <div class="row align-items-center">
+        <!-- Left Column -->
+        <div class="col-lg-6 text-start">
+          <h1 class="display-3 fw-bold">Have a question? Check out the FAQ.</h1>
+          <p class="mt-3 text-muted">
+            Find answers to common questions about our services, pricing, and
+            more. If you don't find your answer, feel free to contact us!
+          </p>
+        </div>
+
+        <!-- Right Column -->
+        <div class="col-lg-6">
+          <div class="accordion" id="faqAccordion">
+            <!-- Accordion Item 1 -->
+            <div class="accordion-item mb-3 rounded shadow-sm">
+              <h2 class="accordion-header" id="headingOne">
+                <button
+                  class="accordion-button collapsed"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#collapseOne"
+                  aria-expanded="false"
+                  aria-controls="collapseOne"
+                >
+                  What is your refund policy?
+                </button>
+              </h2>
+              <div
+                id="collapseOne"
+                class="accordion-collapse collapse"
+                aria-labelledby="headingOne"
+                data-bs-parent="#faqAccordion"
+              >
+                <div class="accordion-body">
+                  We offer a 30-day refund policy for all our products, no
+                  questions asked. Contact support to initiate your refund.
+                </div>
+              </div>
+            </div>
+
+            <!-- Accordion Item 2 -->
+            <div class="accordion-item mb-3 rounded shadow-sm">
+              <h2 class="accordion-header" id="headingTwo">
+                <button
+                  class="accordion-button collapsed"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#collapseTwo"
+                  aria-expanded="false"
+                  aria-controls="collapseTwo"
+                >
+                  Do you offer customer support?
+                </button>
+              </h2>
+              <div
+                id="collapseTwo"
+                class="accordion-collapse collapse"
+                aria-labelledby="headingTwo"
+                data-bs-parent="#faqAccordion"
+              >
+                <div class="accordion-body">
+                  Yes, we provide 24/7 customer support through email, phone,
+                  and live chat.
+                </div>
+              </div>
+            </div>
+
+            <!-- Accordion Item 3 -->
+            <div class="accordion-item mb-3 rounded shadow-sm">
+              <h2 class="accordion-header" id="headingThree">
+                <button
+                  class="accordion-button collapsed"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#collapseThree"
+                  aria-expanded="false"
+                  aria-controls="collapseThree"
+                >
+                  Can I upgrade my subscription later?
+                </button>
+              </h2>
+              <div
+                id="collapseThree"
+                class="accordion-collapse collapse"
+                aria-labelledby="headingThree"
+                data-bs-parent="#faqAccordion"
+              >
+                <div class="accordion-body">
+                  Absolutely! You can upgrade your subscription anytime by
+                  visiting the billing section of your account.
+                </div>
+              </div>
+            </div>
+
+            <!-- Accordion Item 4 -->
+            <div class="accordion-item mb-3 rounded shadow-sm">
+              <h2 class="accordion-header" id="headingFour">
+                <button
+                  class="accordion-button collapsed"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#collapseFour"
+                  aria-expanded="false"
+                  aria-controls="collapseFour"
+                >
+                  How secure is my data?
+                </button>
+              </h2>
+              <div
+                id="collapseFour"
+                class="accordion-collapse collapse"
+                aria-labelledby="headingFour"
+                data-bs-parent="#faqAccordion"
+              >
+                <div class="accordion-body">
+                  We prioritize security with end-to-end encryption and comply
+                  with industry standards to keep your data safe.
+                </div>
+              </div>
+            </div>
+
+            <!-- Accordion Item 5 -->
+            <div class="accordion-item mb-3 rounded shadow-sm">
+              <h2 class="accordion-header" id="headingFive">
+                <button
+                  class="accordion-button collapsed"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#collapseFive"
+                  aria-expanded="false"
+                  aria-controls="collapseFive"
+                >
+                  Do you offer discounts for students?
+                </button>
+              </h2>
+              <div
+                id="collapseFive"
+                class="accordion-collapse collapse"
+                aria-labelledby="headingFive"
+                data-bs-parent="#faqAccordion"
+              >
+                <div class="accordion-body">
+                  Yes, students can avail of special discounts. Contact us with
+                  your student ID for more details.
+                </div>
+              </div>
+            </div>
+
+            <!-- Accordion Item 6 -->
+            <div class="accordion-item mb-3 rounded shadow-sm">
+              <h2 class="accordion-header" id="headingSix">
+                <button
+                  class="accordion-button collapsed"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#collapseSix"
+                  aria-expanded="false"
+                  aria-controls="collapseSix"
+                >
+                  Can I cancel my subscription anytime?
+                </button>
+              </h2>
+              <div
+                id="collapseSix"
+                class="accordion-collapse collapse"
+                aria-labelledby="headingSix"
+                data-bs-parent="#faqAccordion"
+              >
+                <div class="accordion-body">
+                  Yes, you can cancel your subscription anytime without any
+                  hidden fees.
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA Action -->
+    <section
+      class="d-flex flex-column align-items-center justify-content-center text-center py-5"
+      style="
+        background-color: #007bff;
+
+        box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+      "
+    >
+      <!-- Title -->
+      <h2 class="text-white fw-bold">Call to Action</h2>
+
+      <!-- Description -->
+      <p class="text-light mt-3" style="max-width: 600px">
+        Join us in making a difference today. Whether you're looking to learn,
+        collaborate, or build amazing things, we're here to help you every step
+        of the way.
+      </p>
+
+      <!-- Button -->
+      <button
+        class="btn btn-outline-light mt-4 px-5 py-3"
+        style="border-radius: 50px; font-weight: bold; font-size: 1.2rem"
+      >
+        Call to Action
+      </button>
+    </section>
+
+    <!-- Contact Form -->
+    <section class="py-5" style="background-color: #f8f9fa">
+      <div class="container">
+        <!-- Section Title -->
+        <div class="text-center mb-5">
+          <h2 class="display-4">Contact Us</h2>
+          <div
+            class="mx-auto"
+            style="width: 100px; height: 4px; background-color: #007bff"
+          ></div>
+          <p class="text-muted mt-3">
+            We'd love to hear from you! Get in touch with us using the
+            information below or the form on the right.
+          </p>
+        </div>
+
+        <div class="row align-items-start mb-5">
+          <!-- Left Column: Contact Info -->
+          <div
+            class="col-lg-4 card shadow-lg mb-4 me-lg-4"
+            style="background-color: #2382d4; color: white; border-radius: 15px"
+          >
+            <div class="card-body p-5">
+              <h4 class="card-title mb-3">Contact Info</h4>
+              <p class="">
+                We're here to assist you with any questions, concerns, or
+                feedback. Feel free to reach out through any of the options
+                below. Our team is always ready to help!
+              </p>
+              <ul class="list-unstyled mt-4">
+                <!-- Location -->
+                <li class="mb-4 d-flex align-items-start">
+                  <div
+                    class="icon-circle bg-light text-primary me-3 d-flex justify-content-center align-items-center"
+                    style="width: 50px; height: 50px; border-radius: 50%"
+                  >
+                    <i class="bi bi-geo-alt fs-4"></i>
+                  </div>
+                  <div>
+                    <h6 class="mb-1">Our Location</h6>
+                    <p class="mb-0">
+                      123 Main Street,<br />
+                      Springfield, USA
+                    </p>
+                  </div>
+                </li>
+                <!-- Phone Numbers -->
+                <li class="mb-4 d-flex align-items-start">
+                  <div
+                    class="icon-circle bg-light text-primary me-3 d-flex justify-content-center align-items-center"
+                    style="width: 50px; height: 50px; border-radius: 50%"
+                  >
+                    <i class="bi bi-telephone fs-4"></i>
+                  </div>
+                  <div>
+                    <h6 class="mb-1">Phone Numbers</h6>
+                    <p class="mb-0">+1 (555) 123-4567</p>
+                    <p class="mb-0">+1 (555) 987-6543</p>
+                  </div>
+                </li>
+                <!-- Email Addresses -->
+                <li class="mb-4 d-flex align-items-start">
+                  <div
+                    class="icon-circle bg-light text-primary me-3 d-flex justify-content-center align-items-center"
+                    style="width: 50px; height: 50px; border-radius: 50%"
+                  >
+                    <i class="bi bi-envelope fs-4"></i>
+                  </div>
+                  <div>
+                    <h6 class="mb-1">Email Addresses</h6>
+                    <p class="mb-0">contact@example.com</p>
+                    <p class="mb-0">support@example.com</p>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <!-- Right Column: Contact Form -->
+          <div
+            class="col-lg-7 card shadow-lg p-5 ms-lg-4"
+            style="border-radius: 15px"
+          >
+            <h4 class="mb-3">Get In Touch</h4>
+            <p class="text-muted mb-4">
+              Send us a message using the form below, and we'll get back to you
+              as soon as possible.
+            </p>
+            <form>
+              <div class="row">
+                <!-- Name -->
+                <div class="col-md-6 mb-3">
+                  <label for="name" class="form-label">Your Name</label>
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="name"
+                    placeholder="Enter your name"
+                    required
+                  />
+                </div>
+                <!-- Email -->
+                <div class="col-md-6 mb-3">
+                  <label for="email" class="form-label">Your Email</label>
+                  <input
+                    type="email"
+                    class="form-control"
+                    id="email"
+                    placeholder="Enter your email"
+                    required
+                  />
+                </div>
+              </div>
+              <!-- Subject -->
+              <div class="mb-3">
+                <label for="subject" class="form-label">Subject</label>
+                <input
+                  type="text"
+                  class="form-control"
+                  id="subject"
+                  placeholder="Enter the subject"
+                />
+              </div>
+              <!-- Message -->
+              <div class="mb-3">
+                <label for="message" class="form-label">Message</label>
+                <textarea
+                  class="form-control"
+                  id="message"
+                  rows="4"
+                  placeholder="Type your message"
+                  required
+                ></textarea>
+              </div>
+              <!-- Submit Button -->
+              <div class="text-center mt-4">
+                <button
+                  type="submit"
+                  class="btn btn-outline-primary px-5 py-2"
+                  style="border-radius: 50px"
+                >
+                  Send Message
+                </button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer id="footer" class="footer py-5">
+      <div class="container footer-top">
+        <div class="row gy-4">
+          <!-- About Section -->
+          <div class="col-lg-4 col-md-6 footer-about">
+            <a href="index.html" class="logo d-flex align-items-center">
+              <span
+                class="sitename"
+                style="font-size: 1.5rem; font-weight: bold"
+                >iLanding</span
+              >
+            </a>
+            <div class="footer-contact pt-3">
+              <p style="margin-bottom: 5px">A108 Adam Street</p>
+              <p style="margin-bottom: 5px">New York, NY 535022</p>
+              <p class="mt-3" style="margin-bottom: 5px">
+                <strong>Phone:</strong> <span>+1 5589 55488 55</span>
+              </p>
+              <p style="margin-bottom: 5px">
+                <strong>Email:</strong> <span>info@example.com</span>
+              </p>
+            </div>
+            <div class="social-links d-flex mt-4">
+              <a
+                href="#"
+                class="me-2"
+                style="
+                  font-size: 1.5rem;
+                  border: 1px solid grey;
+                  border-radius: 50%;
+                  padding: 10px;
+                  color: grey;
+                  text-align: center;
+                  display: inline-block;
+                "
+              >
+                <i class="bi bi-twitter"></i>
+              </a>
+              <a
+                href="#"
+                class="me-2"
+                style="
+                  font-size: 1.5rem;
+                  border: 1px solid grey;
+                  border-radius: 50%;
+                  padding: 10px;
+                  color: grey;
+                  text-align: center;
+                  display: inline-block;
+                "
+              >
+                <i class="bi bi-facebook"></i>
+              </a>
+              <a
+                href="#"
+                class="me-2"
+                style="
+                  font-size: 1.5rem;
+                  border: 1px solid grey;
+                  border-radius: 50%;
+                  padding: 10px;
+                  color: grey;
+                  text-align: center;
+                  display: inline-block;
+                "
+              >
+                <i class="bi bi-instagram"></i>
+              </a>
+              <a
+                href="#"
+                class="me-2"
+                style="
+                  font-size: 1.5rem;
+                  border: 1px solid grey;
+                  border-radius: 50%;
+                  padding: 10px;
+                  color: grey;
+                  text-align: center;
+                  display: inline-block;
+                "
+              >
+                <i class="bi bi-linkedin"></i>
+              </a>
+            </div>
+          </div>
+
+          <!-- Useful Links -->
+          <div class="col-lg-2 col-md-3 footer-links">
+            <h4 style="font-weight: bold">Useful Links</h4>
+            <ul style="list-style: none; padding: 0; margin: 0">
+              <li>
+                <a
+                  href="#"
+                  style="
+                    text-decoration: none;
+                    color: grey;
+                    display: block;
+                    padding: 5px 0;
+                  "
+                  >Home</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#"
+                  style="
+                    text-decoration: none;
+                    color: grey;
+                    display: block;
+                    padding: 5px 0;
+                  "
+                  >About us</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#"
+                  style="
+                    text-decoration: none;
+                    color: grey;
+                    display: block;
+                    padding: 5px 0;
+                  "
+                  >Services</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#"
+                  style="
+                    text-decoration: none;
+                    color: grey;
+                    display: block;
+                    padding: 5px 0;
+                  "
+                  >Terms of service</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#"
+                  style="
+                    text-decoration: none;
+                    color: grey;
+                    display: block;
+                    padding: 5px 0;
+                  "
+                  >Privacy policy</a
+                >
+              </li>
+            </ul>
+          </div>
+
+          <!-- Our Services -->
+          <div class="col-lg-2 col-md-3 footer-links">
+            <h4 style="font-weight: bold">Our Services</h4>
+            <ul style="list-style: none; padding: 0; margin: 0">
+              <li>
+                <a
+                  href="#"
+                  style="
+                    text-decoration: none;
+                    color: grey;
+                    display: block;
+                    padding: 5px 0;
+                  "
+                  >Web Design</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#"
+                  style="
+                    text-decoration: none;
+                    color: grey;
+                    display: block;
+                    padding: 5px 0;
+                  "
+                  >Web Development</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#"
+                  style="
+                    text-decoration: none;
+                    color: grey;
+                    display: block;
+                    padding: 5px 0;
+                  "
+                  >Product Management</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#"
+                  style="
+                    text-decoration: none;
+                    color: grey;
+                    display: block;
+                    padding: 5px 0;
+                  "
+                  >Marketing</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#"
+                  style="
+                    text-decoration: none;
+                    color: grey;
+                    display: block;
+                    padding: 5px 0;
+                  "
+                  >Graphic Design</a
+                >
+              </li>
+            </ul>
+          </div>
+
+          <!-- Additional Links -->
+          <div class="col-lg-2 col-md-3 footer-links">
+            <h4 style="font-weight: bold">Hic Solutasetp</h4>
+            <ul style="list-style: none; padding: 0; margin: 0">
+              <li>
+                <a
+                  href="#"
+                  style="
+                    text-decoration: none;
+                    color: grey;
+                    display: block;
+                    padding: 5px 0;
+                  "
+                  >Molestiae accusamus iure</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#"
+                  style="
+                    text-decoration: none;
+                    color: grey;
+                    display: block;
+                    padding: 5px 0;
+                  "
+                  >Excepturi dignissimos</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#"
+                  style="
+                    text-decoration: none;
+                    color: grey;
+                    display: block;
+                    padding: 5px 0;
+                  "
+                  >Suscipit distinctio</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#"
+                  style="
+                    text-decoration: none;
+                    color: grey;
+                    display: block;
+                    padding: 5px 0;
+                  "
+                  >Dilecta</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#"
+                  style="
+                    text-decoration: none;
+                    color: grey;
+                    display: block;
+                    padding: 5px 0;
+                  "
+                  >Sit quas consectetur</a
+                >
+              </li>
+            </ul>
+          </div>
+
+          <!-- More Links -->
+          <div class="col-lg-2 col-md-3 footer-links">
+            <h4 style="font-weight: bold">Nobis Illum</h4>
+            <ul style="list-style: none; padding: 0; margin: 0">
+              <li>
+                <a
+                  href="#"
+                  style="
+                    text-decoration: none;
+                    color: grey;
+                    display: block;
+                    padding: 5px 0;
+                  "
+                  >Ipsam</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#"
+                  style="
+                    text-decoration: none;
+                    color: grey;
+                    display: block;
+                    padding: 5px 0;
+                  "
+                  >Laudantium dolorum</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#"
+                  style="
+                    text-decoration: none;
+                    color: grey;
+                    display: block;
+                    padding: 5px 0;
+                  "
+                  >Dinera</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#"
+                  style="
+                    text-decoration: none;
+                    color: grey;
+                    display: block;
+                    padding: 5px 0;
+                  "
+                  >Trodelas</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#"
+                  style="
+                    text-decoration: none;
+                    color: grey;
+                    display: block;
+                    padding: 5px 0;
+                  "
+                  >Flexo</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <!-- Footer Bottom -->
+      <div class="container text-center mt-4">
+        <p>
+          © <span>Copyright</span>
+          <strong
+            class="px-1 sitename"
+            style="font-weight: bold; font-size: 1.2rem"
+            >iLanding</strong
+          >
+          <span>All Rights Reserved</span>
+        </p>
+        <div class="credits">
+          <!-- All the links in the footer should remain intact. -->
+          <!-- You can delete the links only if you've purchased the pro version. -->
+          <!-- Licensing information: https://bootstrapmade.com/license/ -->
+          <!-- Purchase the pro version with working PHP/AJAX contact form: [buy-url] -->
+          Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
+    <script src="./js/script.js"></script>
+	<a href="#" class="back-to-top bg-primary" id="backToTop">↑</a>
+	<script>
+    const backToTopButton = document.getElementById('backToTop');
+
+    window.onscroll = function() {
+        // Show button when scrolled down 200px
+        if (document.body.scrollTop > 200 || document.documentElement.scrollTop > 200) {
+            backToTopButton.style.display = "block";
+        } else {
+            backToTopButton.style.display = "none";
+        }
+    };
+
+    backToTopButton.addEventListener('click', function(event) {
+        event.preventDefault(); // Prevent default anchor behavior
+        window.scrollTo({ top: 0, behavior: 'smooth' }); // Smooth scroll to top
+    });
+</script>
+  </body>
+</html>

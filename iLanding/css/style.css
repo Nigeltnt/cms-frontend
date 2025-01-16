@@ -1,0 +1,547 @@
+/* Rounded and shadowed navbar */
+.rounded-navbar {
+  border-radius: 50px; /* Rounded corners */
+  margin: 20px auto; /* Center with a gap from the edges */
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  width: calc(100% - 20px); /* Reduced width to fit with margin */
+  transition: all 0.3s ease-in-out;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Subtle shadow glow */
+}
+
+.rounded-navbar:hover {
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3); /* Slightly stronger shadow on hover */
+}
+
+.rounded-button {
+  border-radius: 50px; /* Rounded corners */
+}
+
+body {
+  font-family: "Inter", serif;
+}
+
+/* Fancy Dropdown Styling */
+.dropdown-menu {
+  border-radius: 8px; /* Rounded corners */
+  border: none; /* Remove default border */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15); /* Subtle shadow */
+  padding: 10px 0; /* Space between items */
+  transform: translateY(10px); /* Initial position for animation */
+  opacity: 0; /* Hidden by default */
+  transition: all 0.3s ease-in-out; /* Smooth animation */
+}
+
+/* Show the dropdown with animation */
+.dropdown-menu.show {
+  transform: translateY(0); /* Slide into view */
+  opacity: 1; /* Fully visible */
+}
+
+/* Dropdown items */
+.dropdown-item {
+  padding: 10px 20px; /* Adjust padding */
+  color: #333; /* Text color */
+  transition: background-color 0.2s ease, color 0.2s ease;
+}
+
+.dropdown-item:hover {
+  background-color: #f8f9fa; /* Light hover effect */
+  color: #007bff; /* Blue text on hover */
+}
+
+.diagonal-bg {
+  min-height: 100vh; /* Set height to 60vh */
+  background: linear-gradient(
+    135deg,
+    #eef7ff 50%,
+    white 50%
+  ); /* Diagonal gradient from green to blue */
+}
+
+.content-left {
+  max-width: 50%;
+}
+
+.content-right img {
+  max-width: 100%;
+  height: auto;
+}
+
+.custom-badge {
+  background-color: #cce5ff; /* Lighter blue background */
+  color: #007bff; /* Blue text color */
+  padding: 10px 20px;
+  margin-bottom: 10px; /* Space below the badge */
+  border-radius: 50px; /* Optional: rounded corners */
+}
+
+/*  */
+
+.content-right {
+  position: relative; /* To position the overlay correctly */
+}
+
+.overlay {
+  background-color: white; /* Semi-transparent white */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Shadow effect */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  border-radius: 10px; /* Optional: rounded corners */
+  min-width: 200px; /* Optional: set a max-width for the overlay */
+}
+
+.overlay img {
+  width: 50px; /* Avatar size */
+  height: 50px;
+}
+
+.overlay .text-white p {
+  margin: 5px 0;
+  font-size: 14px;
+}
+
+/*  */
+/* Container for the avatars */
+.avatars {
+  display: flex; /* Use flexbox to display the avatars in a row */
+  position: relative;
+}
+
+/* Individual avatar item */
+.avatars__item {
+  position: relative;
+  margin-left: -10px; /* Overlap the avatars */
+}
+
+/* Avatar image */
+.avatar {
+  width: 50px; /* Fixed width for avatars */
+  height: 50px; /* Fixed height for avatars */
+  object-fit: cover; /* Ensure the image covers the container */
+  border: 2px solid blue; /* Optional: Border between avatars */
+}
+
+/* Optional: Add some styling to the overall avatar container */
+.avatars__item:first-child {
+  margin-left: 0; /* Remove the negative margin from the first avatar */
+}
+
+.card {
+  border: none; /* Remove default border */
+  border-radius: 15px; /* Rounded edges */
+}
+
+.icon-container {
+  width: 50px;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: white; /* Light gray background */
+  border-radius: 50%; /* Circular icons */
+  font-size: 24px; /* Icon size */
+  color: #007bff; /* Icon color (Bootstrap primary) */
+}
+
+/*  */
+
+/* Add some custom spacing for the icons and alignment */
+#about .content-left h6 {
+  letter-spacing: 1px;
+}
+
+#about .content-left p {
+  font-size: 1rem;
+  color: #555759;
+}
+
+#about .content-left .bi-check-circle-fill {
+  font-size: 1.25rem;
+}
+
+#about .content-left img {
+  max-width: 100%;
+  border-radius: 10px;
+}
+
+#about .content-left .call-to-action p {
+  font-size: 0.9rem;
+  margin-bottom: 0;
+}
+
+/*  */
+.section-title {
+  text-align: center;
+  margin-bottom: 1rem;
+}
+.section-title .blue-line {
+  width: 70px;
+  height: 3px;
+  background-color: blue;
+  margin: 0.5rem auto;
+  border-radius: 3px;
+}
+
+/*  */
+.custom-tabs .custom-tab {
+  /* border: 1px solid #ced4da; Darker gray border */
+  border-radius: 50px; /* Rounded corners */
+  color: #495057; /* Text color */
+  padding: 0.5rem 1rem; /* Padding inside the tabs */
+  margin-right: 1px; /* Spacing between tabs */
+  width: 100px;
+  text-align: center;
+}
+
+.custom-tabs .custom-tab.active {
+  background-color: #1b60c7; /* Slightly darker gray for active tab */
+  border-color: #adb5bd; /* Even darker border for active tab */
+  color: white; /* Darker text color for active tab */
+}
+
+.custom-tabs .custom-tab:hover {
+  background-color: blue; /* Hover effect */
+  color: white; /* Darker text on hover */
+}
+
+/* for tab */
+.content-section {
+  max-width: 50%;
+}
+
+.image-section {
+  max-width: 45%;
+}
+
+.blue-line {
+  width: 70px;
+  height: 3px;
+  background-color: blue;
+  margin: 0.5rem 0;
+  border-radius: 3px;
+}
+
+.feature-list {
+  list-style: none;
+  padding: 0;
+}
+
+.feature-list li {
+  display: flex;
+  align-items: left;
+  margin-bottom: 0.5rem;
+  text-align: left;
+}
+
+.feature-list li i {
+  margin-right: 0.5rem;
+  margin-bottom: 10px;
+}
+
+/* CTA */
+
+.cta-section {
+  background-color: #007bffbc;
+  color: white;
+  min-height: 300px;
+}
+
+.cta-section .container {
+  z-index: 1;
+  position: relative;
+}
+
+.cta-section svg {
+  z-index: 0;
+}
+
+.cta-section h1 {
+  font-size: 3.5rem;
+  margin-bottom: 1rem;
+}
+
+.cta-section p {
+  font-size: 1.25rem;
+}
+
+.cta-section .btn {
+  font-size: 1.25rem;
+  padding: 0.75rem 1.5rem;
+}
+.logo-carousel {
+  background-color: white; /* Light gray background */
+}
+
+.logo-carousel img {
+  filter: grayscale(100%);
+  opacity: 0.8;
+  transition: opacity 0.3s ease;
+  max-width: 120px; /* Uniform logo size */
+  height: auto;
+}
+
+.logo-carousel img:hover {
+  opacity: 1; /* Highlight logo on hover */
+}
+
+.logo-carousel .d-flex {
+  gap: 20px; /* Space between logos */
+  flex-wrap: wrap; /* Make responsive on smaller screens */
+}
+
+/* Testimonials */
+.testimonials {
+  background-color: #f8f9fa; /* Light gray background */
+}
+
+.section-title h2 {
+  font-weight: bold;
+}
+
+.blue-line {
+  width: 50px;
+  height: 4px;
+  background-color: #007bff; /* Primary blue */
+  margin: 0.5rem auto;
+}
+
+.testimonial-card {
+  background-color: white;
+  border: 1px solid #eaeaea;
+  border-radius: 8px;
+}
+
+.testimonial-card img {
+  width: 60px;
+  height: 60px;
+}
+
+.testimonial-card blockquote {
+  font-style: italic;
+  color: #6c757d; /* Muted text color */
+}
+
+.star-rating {
+  margin-top: 5px; /* Space above the stars */
+}
+
+.star-rating i {
+  font-size: 16px; /* Size of the stars */
+  margin-right: 2px; /* Space between stars */
+}
+
+.service-card {
+  background-color: white;
+  border: 1px solid #eaeaea;
+  border-radius: 8px;
+  width: 600px; /* Adjust width as needed */
+  height: 200px; /* Adjust height as needed */
+  padding: 20px; /* Optional: Add padding for internal spacing */
+}
+
+/* Counter */
+.counter-box {
+  margin: 0 auto;
+}
+
+.number {
+  font-size: 3rem;
+  font-weight: bold;
+  color: #007bff; /* Primary blue */
+}
+
+.blue-line {
+  width: 50px;
+  height: 4px;
+  background-color: #007bff; /* Primary blue */
+  margin: 10px auto 0;
+}
+
+h5 {
+  font-size: 1.2rem;
+  color: #333; /* Dark gray */
+}
+
+.pricing-card {
+  text-align: left;
+  position: relative;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.pricing-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+.plan-title {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.price {
+  font-size: 2rem;
+  font-weight: bold;
+  margin: 0;
+}
+
+.price sup {
+  font-size: 1rem;
+  vertical-align: top;
+  margin-right: 2px;
+}
+
+.price sub {
+  font-size: 0.8rem;
+  vertical-align: bottom;
+  margin-left: 2px;
+}
+
+.features-title {
+  font-size: 1.2rem;
+  font-weight: bold;
+  margin-top: 1rem;
+}
+
+.list-unstyled li {
+  margin-bottom: 0.5rem;
+}
+
+.badge-popular {
+  position: absolute;
+  top: -10px;
+  left: 10px;
+  background-color: #ff6f61;
+  color: white;
+  font-size: 0.9rem;
+  font-weight: bold;
+  padding: 5px 10px;
+  border-radius: 20px;
+}
+
+.blue-line {
+  width: 50px;
+  height: 4px;
+  background-color: #007bff;
+  margin: 10px 0;
+}
+
+.footer-links a:hover {
+  color: blue;
+  text-decoration: underline;
+}
+
+.footer-contact p {
+  margin-bottom: 5px;
+}
+
+.footer-contact p.mt-3 {
+  margin-top: 10px;
+}
+
+/* Style for email and phone closer together */
+.footer-contact p span {
+  margin-left: 5px;
+}
+
+.social-links a {
+  font-size: 1.5rem;
+  border: 2px solid grey;
+  border-radius: 50%;
+  padding: 10px;
+  color: grey;
+  text-align: center;
+  display: inline-block;
+}
+
+/* Hover effect for icons */
+.social-links a:hover {
+  color: white;
+  background-color: grey;
+}
+
+/* Adjust icon size for better alignment */
+.social-links i {
+  line-height: 1;
+}
+
+.content-right {
+    position: relative; /* Make the parent div relative */
+}
+
+.experience-badge {
+    position: absolute; /* Position the badge absolutely */
+    bottom: 20px; /* Adjust as needed for positioning */
+    right: 20px; /* Adjust as needed for positioning */
+    background-color: #0d6efd; /* Semi-transparent background */
+    padding: 10px 15px; /* Padding for the badge */
+    border-radius: 8px; /* Rounded corners */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Shadow effect */
+    animation: float 3s ease-in-out infinite; /* Floating animation */
+	color: #fff;
+}
+
+@keyframes float {
+    0%, 100% {
+        transform: translatey(0); /* Start and end at original position */
+    }
+    50% {
+        transform: translatey(-10px); /* Move up */
+    }
+}
+
+.floating-animation {
+    animation: float 3s ease-in-out infinite; /* Adjust duration as needed */
+}
+
+@keyframes float {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-10px); /* Adjust the floating height */
+    }
+}
+
+
+.clients {
+    padding: 50px 0; /* Adjust padding as needed */
+}
+
+.swiper-slide {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 20px; /* Space between slides */
+	filter: grayscale(100%);
+}
+ .swiper-slide:hover {
+    filter: grayscale(0%); /* Remove grayscale on hover */
+}
+
+
+
+.back-to-top {
+    position: fixed; /* Fixed position */
+    bottom: 20px; /* Distance from the bottom */
+    right: 20px; /* Distance from the right */
+    color: white; /* Text color */
+    border: none; /* No border */
+    border-radius: 50%; /* Rounded corners */
+    padding: 10px 15px; /* Padding */
+    font-size: 20px; /* Font size */
+    text-align: center; /* Center text */
+    text-decoration: none; /* Remove underline */
+    display: none; /* Initially hidden */
+    z-index: 1000; /* Ensure it is above other content */
+    transition: opacity 0.3s; /* Smooth transition */
+}
+
+.back-to-top:hover {
+    opacity: 0.8; /* Slightly transparent on hover */
+}
